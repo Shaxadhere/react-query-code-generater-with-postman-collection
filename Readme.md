@@ -7,8 +7,8 @@ const data = Buffer.from(fs.readFileSync("./sample-collection.json")).toString()
 
 run these commands:
 
-npm install
-npm run dev
+- npm install
+- npm run dev
 
 access the root of project in chrome with http://localhost:5000/
 

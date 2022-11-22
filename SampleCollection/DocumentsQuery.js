@@ -12,7 +12,7 @@ export const useListDocuments = () => {
 
                 {
                     headers: {
-                        "Content-Type": "aplication/json",
+                        "Content-Type": "aplication/json",   
                         Authorization: "Bearer " + TOKEN
                     }
                 })

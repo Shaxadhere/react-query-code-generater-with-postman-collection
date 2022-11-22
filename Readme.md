@@ -1,3 +1,5 @@
+##STEPS:
+
 copy your postman collection file to this project's root
 
 add your file path in this line in index.js file

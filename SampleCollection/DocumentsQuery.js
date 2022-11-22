@@ -20,22 +20,3 @@ export const useListDocuments = () => {
         }
     })
 }
-export const useCreateDocument = () => {
-    return useQuery({
-        queryKey: ["createdocument"],
-        queryFn: async () => {
-            const { data } = await axios.post("https://google.com/document",
-                {
-                    title: "Im a title",
-                    description: "Im a description",
-                },
-                {
-                    headers: {
-                        "Content-Type": "aplication/json",
-                        Authorization: "Bearer " + TOKEN
-                    }
-                })
-            return data
-        }
-    })
-}

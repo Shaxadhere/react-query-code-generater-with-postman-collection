@@ -1,0 +1,124 @@
+{
+	"info": {
+		"_postman_id": "70baa9bb-d966-4422-b8d6-44b0b9ebc98c",
+		"name": "Sample Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"user@gmail.com\",\r\n    \"password\":\"abc123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://some-base-url.com/auth/signin",
+							"protocol": "http",
+							"host": [
+								"some-base-url",
+								"com"
+							],
+							"path": [
+								"auth",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"User Name\",\r\n    \"email\":\"user@gmail.com\",\r\n    \"password\":\"abc123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://some-base-url.com/auth/signup",
+							"protocol": "http",
+							"host": [
+								"some-base-url",
+								"com"
+							],
+							"path": [
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Documents",
+			"item": [
+				{
+					"name": "List Documents",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://some-base-url.com/documents",
+							"protocol": "http",
+							"host": [
+								"some-base-url",
+								"com"
+							],
+							"path": [
+								"documents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Document",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Im a title\",\r\n    \"description\": \"Im a description\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://some-base-url.com/document",
+							"protocol": "http",
+							"host": [
+								"some-base-url",
+								"com"
+							],
+							"path": [
+								"document"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
